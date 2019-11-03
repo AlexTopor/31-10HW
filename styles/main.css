@@ -31,14 +31,14 @@ header, menu, .img, main {
 }
 header {
   grid-area: header;
-  background: url(1.jpg);
+  background: url(./styles/1.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .img {
    grid-area: img;
-  background: url(2.jpg);
+  background: url(./styles/2.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; 
@@ -53,7 +53,7 @@ menu {
 }
 main {
   grid-area: main;
-  background: url(3.jpg);
+  background: url(./styles/3.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
