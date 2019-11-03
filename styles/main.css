@@ -1,0 +1,109 @@
+body {
+  padding:0;
+  margin:0;
+  background: #40a4d6;
+  font-size: 60px;
+  color: red;
+  font-weight: 800;
+}
+
+.father {
+  
+  display: grid;
+  grid-template-areas: 
+  "menu menu"
+  "img ."
+  "header header"
+  
+  "main main";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 2fr 1fr 4fr;
+  height: 200vh;
+  grid-gap: 10px;
+}
+header, menu, .img, main {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header {
+  grid-area: header;
+  background: url(1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.img {
+   grid-area: img;
+  background: url(2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  
+}
+/* .img > img {
+  height: 100%;
+  width: 90%;
+} */
+menu {
+  grid-area: menu;
+}
+main {
+  grid-area: main;
+  background: url(3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#search {
+  height: 30%
+}
+@media screen and (max-width: 1300px) {
+  .father {
+  
+      display: grid;
+      grid-template-areas: 
+      "header . menu"
+      "main main img"
+      "main main img"
+      "main main img";
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      height: 100vh;
+      grid-gap: 10px;
+}
+} 
+@media screen and (max-width: 900px) {
+  .father {
+  
+      display: grid;
+      grid-template-areas: 
+      "header header header"
+      "img img img"
+      "menu menu menu"
+      "main main main";
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 2fr 1fr 4fr;
+      height: 200vh;
+      grid-gap: 10px;
+}
+}
+
+@media screen and (max-width: 400px) {
+   .father {
+  
+      display: grid;
+      grid-template-areas: 
+     "menu menu"
+     "img img"
+     "header header"
+     "main main";
+     grid-template-columns: 1fr 1fr;
+     grid-template-rows: 1fr 2fr 1fr 4fr;
+     height: 200vh;
+     grid-gap: 10px;
+}
+}
